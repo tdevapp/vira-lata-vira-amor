@@ -177,6 +177,22 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="team-section section-pad" id="equipe">
+          <div className="content-width team-grid">
+            <div className="team-copy reveal">
+              <SectionEyebrow>QUEM CUIDA TAMBÉM FAZ PARTE DA FAMÍLIA</SectionEyebrow>
+              <h2>Gente que cuida,<br /><em>junto, com carinho.</em></h2>
+              <p>Por trás de cada atendimento, tem uma equipe que acredita que os pets fazem parte da família.</p>
+              <p>Um time que trabalha lado a lado para receber cada pet com atenção e carinho.</p>
+              <a className="underlined-link" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Acompanhe nosso dia a dia <Instagram size={16} /></a>
+            </div>
+            <a className="team-image-card reveal" href={INSTAGRAM_URL} target="_blank" rel="noreferrer" aria-label="Ver a equipe da Vira Lata Vira Amor no Instagram">
+              <img src="/manus-storage/team-message_d465614a.webp" alt="Equipe da Vira Lata Vira Amor reunida em frente à clínica, na arte ‘Juntas, somos mais fortes!’" loading="lazy" />
+              <span className="team-image-caption"><Heart size={14} fill="currentColor" /> A equipe Vira Lata Vira Amor</span>
+            </a>
+          </div>
+        </section>
+
         <section className="services-section section-pad" id="servicos">
           <div className="content-width">
             <div className="section-heading services-heading reveal">
@@ -243,7 +259,12 @@ export default function Home() {
               <a className="button button-primary" href={MAPS_URL} target="_blank" rel="noreferrer">Como chegar <ArrowUpRight size={16} /></a>
               <a className="location-phone" href="tel:+5511970920703"><Phone size={15} /> (11) 97092-0703</a>
             </div>
-            <div className="map-frame reveal"><iframe title="Mapa da Vira Lata Vira Amor na Vila da Saúde" src="https://www.google.com/maps?q=Vira%20Lata%20Vira%20Amor%20Pet%20Shop%20e%20Cl%C3%ADnica%20Veterin%C3%A1ria%2C%20R.%20Itapiru%2C%20719%2C%20S%C3%A3o%20Paulo&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /><a className="map-open" href={MAPS_URL} target="_blank" rel="noreferrer" aria-label="Abrir localização no Google Maps"><ArrowUpRight size={18} /></a><span className="map-caption"><MapPin size={14} /> Vila da Saúde, São Paulo</span></div>
+            <div className="location-visuals reveal">
+              <div className="map-frame"><iframe title="Mapa da Vira Lata Vira Amor na Vila da Saúde" src="https://www.google.com/maps?q=Vira%20Lata%20Vira%20Amor%20Pet%20Shop%20e%20Cl%C3%ADnica%20Veterin%C3%A1ria%2C%20R.%20Itapiru%2C%20719%2C%20S%C3%A3o%20Paulo&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /><a className="map-open" href={MAPS_URL} target="_blank" rel="noreferrer" aria-label="Abrir localização no Google Maps"><ArrowUpRight size={18} /></a><span className="map-caption"><MapPin size={14} /> Vila da Saúde, São Paulo</span></div>
+              <a className="storefront-card" href={MAPS_URL} target="_blank" rel="noreferrer" aria-label="Ver a fachada e abrir a localização no Google Maps">
+                <img src="/manus-storage/storefront-location_7c2de670.webp" alt="Arte original da Vira Lata Vira Amor com a fachada da clínica e o endereço R. Itapiru, 719" loading="lazy" />
+              </a>
+            </div>
           </div>
         </section>
 

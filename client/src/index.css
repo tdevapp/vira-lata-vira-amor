@@ -390,3 +390,38 @@ h1 em, h2 em, h3 em { color: var(--teal); font-weight: 400; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+/* Fotografia original da equipe e arte da fachada fornecidas pelo estabelecimento */
+.team-section { background: #f5f2eb; }
+.team-grid { display: grid; grid-template-columns: 1fr .86fr; align-items: center; gap: 82px; }
+.team-copy h2 { margin: 20px 0 20px; color: var(--ink); font: 500 clamp(38px, 4vw, 52px)/1.04 "DM Serif Display", Georgia, serif; letter-spacing: -.035em; }
+.team-copy p { max-width: 465px; color: var(--ink-soft); font-size: 13px; line-height: 1.85; margin-bottom: 13px; }
+.team-copy .underlined-link { margin-top: 13px; padding-bottom: 8px; border-bottom: 1px solid #bbd3ce; }
+.team-image-card { display: block; width: min(100%, 390px); margin-left: auto; padding: 11px; color: var(--ink); background: var(--paper); border-radius: 3px 29px 3px 3px; box-shadow: 0 16px 38px rgba(21,57,78,.1); transform: rotate(1deg); transition: transform .25s ease, box-shadow .25s ease; }
+.team-image-card:hover { transform: rotate(0) translateY(-3px); box-shadow: 0 20px 44px rgba(21,57,78,.14); }
+.team-image-card img { width: 100%; height: auto; aspect-ratio: 668 / 832; object-fit: contain; border-radius: 1px 19px 1px 1px; }
+.team-image-caption { display: flex; align-items: center; gap: 7px; padding: 10px 8px 2px; color: var(--teal-deep); font-size: 9px; font-weight: 700; letter-spacing: .02em; }
+.team-image-caption svg { color: #d24887; }
+.location-visuals { min-width: 0; display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(205px, .78fr); align-items: stretch; gap: 12px; }
+.location-visuals .map-frame { min-width: 0; height: 374px; }
+.storefront-card { min-width: 0; min-height: 374px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #2f70ad; border-radius: 3px 44px 3px 3px; box-shadow: 0 13px 35px rgba(22,54,59,.08); transition: transform .22s ease, box-shadow .22s ease; }
+.storefront-card:hover { transform: translateY(-3px); box-shadow: 0 17px 38px rgba(22,54,59,.13); }
+.storefront-card img { width: 100%; height: 100%; object-fit: cover; }
+
+@media (max-width: 980px) {
+  .team-grid { gap: 45px; }
+  .location-visuals { grid-template-columns: minmax(0, 1.08fr) minmax(185px, .92fr); gap: 9px; }
+}
+
+@media (max-width: 720px) {
+  .team-section { padding-block: 72px; }
+  .team-grid { grid-template-columns: 1fr; gap: 30px; }
+  .team-copy h2 { margin: 18px 0 15px; font-size: clamp(37px, 10vw, 48px); }
+  .team-copy p { font-size: 12px; }
+  .team-image-card { width: min(100%, 360px); margin-inline: auto; }
+  .location-visuals { grid-template-columns: 1fr; gap: 15px; }
+  .location-visuals .map-frame, .location-visuals .map-frame iframe { min-height: 285px; height: 285px; }
+  .storefront-card { width: min(100%, 340px); min-height: auto; margin-inline: auto; border-top-right-radius: 32px; }
+  .storefront-card img { width: 100%; height: auto; object-fit: contain; }
+}

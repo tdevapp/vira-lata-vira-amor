@@ -68,9 +68,8 @@ const navItems = [
 function BrandMark() {
   return (
     <a className="brand" href="#inicio" aria-label="Vira Lata Vira Amor — início">
-      <span className="brand-symbol" aria-hidden="true">
-        <PawPrint size={24} strokeWidth={2.3} />
-        <span className="brand-heart"><Heart size={10} fill="currentColor" /></span>
+      <span className="brand-symbol brand-logo-image" aria-hidden="true">
+        <img src="/manus-storage/brand-logo_9e2e08d4.jpg" alt="" />
       </span>
       <span className="brand-wordmark"><strong>vira lata</strong><strong>vira amor<span>.</span></strong><small>CLÍNICA VETERINÁRIA & PET SHOP</small></span>
     </a>
